@@ -1,9 +1,8 @@
-from .py_group import *
+from .group import *
 from .data import Data
 
 
-__doc__ = py_group.__doc__
+__doc__ = group.__doc__
 
-
-if hasattr(py_group, "__all__"):
-	__all__ = py_group.__all__
+if hasattr(group, "__all__"):
+	__all__ = group.__all__
