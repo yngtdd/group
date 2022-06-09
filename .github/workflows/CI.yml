@@ -2,7 +2,11 @@ name: CI
 
 on:
   push:
+    paths:
+      - 'py-group/**'
   pull_request:
+    paths:
+      - 'py-group/**'
 
 jobs:
   linux:
