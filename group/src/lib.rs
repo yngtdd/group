@@ -3,7 +3,6 @@ pub fn sum(x: usize, y: usize) -> usize {
     x + y
 }
 
-
 #[cfg(test)]
 mod tests {
     use crate::sum;
