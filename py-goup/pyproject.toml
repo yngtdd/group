@@ -1,0 +1,17 @@
+[build-system]
+requires = ["maturin>=0.13,<0.14"]
+build-backend = "maturin"
+
+[project]
+name = "py_group"
+description = "Grouping tasks"
+authors = [
+  {email = "yngtdd@gmail.com"},
+  {name = "Todd Young"}
+]
+requires-python = ">=3.6"
+classifiers = [
+    "Programming Language :: Rust",
+    "Programming Language :: Python :: Implementation :: CPython",
+    "Programming Language :: Python :: Implementation :: PyPy",
+]

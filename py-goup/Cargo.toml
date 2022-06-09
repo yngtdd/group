@@ -1,0 +1,19 @@
+[package]
+name = "py_group"
+version = "0.1.0"
+edition = "2021"
+
+[workspace]
+# prevents the package from thinking it is in the workspace
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[lib]
+name = "py_group"
+crate-type = ["cdylib"]
+
+[dependencies]
+pyo3 = { version = "0.16.3", features = ["extension-module"] }
+group = { path = "../group"}
+
+[package.metadata.maturin]
+python-source = "python"
